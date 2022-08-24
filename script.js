@@ -8,7 +8,7 @@ window.setTimeout(getData, 2000)
 async function getData(){
     const res = await fetch('https://randomuser.me/api?results=80')
     const {results} = await res.json()
-    console.log(results)
+   
     usersList.innerHTML = ''
 
     results.forEach(user => {
